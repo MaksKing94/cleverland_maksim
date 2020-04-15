@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<fieldset>
+    <legend>
+    Сведения о пользователе
+    </legend>
+    <form name="users">
+    <p>Ваше имя:
+    <input type="text name="userName" size="30">
+    </p>
+    <p>
+    Ваш возраст 
+    <input type="text name="userAge" list="age">
+        <datalist id="age">
+        <option value="1-10 лет">  
+        <option value="11-16 лет">
+        <option value="17-22 лет">      
+        <option value="23-35 лет">   
+        <option value="35-50 лет">
+        <option value="Старше 50 лет">               
+        </datalist>
+    </p>
+    <p>
+    Какую операционную систему вы используете  
+    <select name="os">
+       <option value="1"> Windows
+        <option value="2"> Linux
+        <option value="3"> MacOS
+        <option value="4"> Другое         
+    </select>      
+    </p>
+    <p>
+    Какие браузеры используете?<br>
+    <label><input type="checkbox" name="ME" value="1" checked> Microsoft Edge</label><br>   
+    <label><input type="checkbox" name="GH" value="2"> Google Chrome</label><br>
+    <label><input type="checkbox" name="OP" value="3"> Opera</label><br>
+    <label><input type="checkbox" name="YD" value="4"> Yandex</label><br>
+    <label><input type="checkbox" name="MF" value="5"> Mozilla Firefox</label><br>
+    <label><input type="checkbox" name="Dr" value="6"> Другое</label><br>
+    </p>
+    <p>
+     Связана ли ваша деятельность с компьютером?
+     <br>   
+    <label><input type="radio" name="comp" value="1">Да</label><br>
+    <label><input type="radio" name="comp" value="2">Нет</label><br>     
+    </p>
+    <p>
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Очистить">
+    </p>
+    <p> Дополнительная информация<br>
+    <textarea name="inform" cols="30" rows="6"></textarea>    
+
+    </p>
+
+
+    </form>
+</fieldset>
+</body>
+</html>
