@@ -25,12 +25,12 @@ p {
     font-family: Helvetica;
 }
 
-ul>li {
+ul > li {
         font-weight: bold;
         color: #3857a0;
 }
 
-td>ul>li {
+td > ul > li {
     font-weight: normal;
     color: #000;
 }
