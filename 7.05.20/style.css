@@ -1,20 +1,20 @@
-.p_1{
+.p_1 {
     background-color: orange;
     width: 500px;
     letter-spacing: 1px;
     word-spacing: 5px;
     line-height: 1.1em; 
 }
-.p_1::first-letter{
+.p_1::first-letter {
     margin-left: 1%;
 }
-.p_2{
+.p_2 {
     background-color: violet;
     width: 500px;
     letter-spacing: 3px;
     word-spacing: 15px;
     line-height: 1.6em;  
 }
-.p_2::first-letter{
+.p_2::first-letter {
     margin-left: 3%;
 }
