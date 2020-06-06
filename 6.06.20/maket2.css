@@ -1,18 +1,101 @@
-#container{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 1600px;
+    background-color:#095c5c;
+    background-image: url(img/1420.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    color: thistle;
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    height: 50px;
+    background-color: rgb(11, 5, 59);
+    color: rgb(235, 221, 235);
+    font-size: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#mainSection {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-div{
-    border: 1px solid black;
-}
-#red{
-    font-size: 30px;
-}
-@media all and (max-width:1200px) and (min-width:1024px){
-    #red{background-color: red;
+    width: 100%;
+    max-width: 1600px;
     flex-grow: 1;
-    color: #ffffff;
+    flex-shrink: 1;
 }
+
+#left-panel {
+    display: flex;
+    flex-direction:column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #b32b6f;
+    flex-basis: 1px;
+}
+
+main {
+    flex-basis: 1px;
+    flex-grow: 4;
+    flex-shrink: 1;
+    background-color: #ffffff;
+}
+#downSection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1600px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#left-down-panel, #central-down-panel, #right-down-panel {
     
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: rgb(52, 207, 228);
+    flex-basis: 1px;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1600px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 150px;
+    background-color: rgb(16, 56, 9);
+}
+
+@media (max-width:768px) {
+    #mainSection, #main, #downSection {
+        flex-direction: column;
+    }
+}
+@media all and (min-width:1420px) {
+        header {
+            background-image: url(1420.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 }
