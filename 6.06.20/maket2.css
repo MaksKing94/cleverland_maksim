@@ -1,0 +1,18 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div{
+    border: 1px solid black;
+}
+#red{
+    font-size: 30px;
+}
+@media all and (max-width:1200px) and (min-width:1024px){
+    #red{background-color: red;
+    flex-grow: 1;
+    color: #ffffff;
+}
+    
+}
