@@ -1,4 +1,4 @@
-'use strict'
+"use striсt";
 let a = +prompt('Введите натуральное число');
 while (isNaN(a) || a < 0) {
     alert('Вы ввели неправильное значение. Введите натуральное число!');
@@ -9,13 +9,13 @@ while (isNaN(b) || b < 0 || b <= a) {
     alert('Вы ввели неправильное значение. Введите натуральное число, больше a!');
     a = +prompt('Введите натуральное число, больше a.');
 };
-function calcSum () {
+let calcSum  = ()  => {
     let sum = 0;
     do {
         sum = sum + a;
         a++;
     } while (a <= b)
     return(sum);
-}
+};
 
 alert (`Сумма чисел от ${a} до ${b} равна ${calcSum ()}`);
