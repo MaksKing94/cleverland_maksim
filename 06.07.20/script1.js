@@ -24,3 +24,8 @@ for (let key in person){
     count++;
 }
 alert(count);
+let countNumber = 0;
+for (let key in person) {
+    if (!isNaN(person[key])) countNumber++
+}
+alert (countNumber);
