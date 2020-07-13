@@ -1,9 +1,13 @@
 let square = {
     width: 10,
     height: 8,  
-}
-square.getArea (a, b) = function () {
-    return (a * b);
-}
 
-alert (square.getArea());
+area() {
+    alert(`Площадь прямоугольника равна ${this.width * this.height}`);
+},
+perimetr() {
+    alert(`Периметр объекта равен ${(this.width + this.height) * 2}`)
+},
+};
+square.area();
+square.perimetr();
