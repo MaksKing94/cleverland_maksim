@@ -1,16 +1,10 @@
-let str= prompt('Введите имя и фамилию');
+"use striсt";
+let inch = +prompt('Введите натуральное  целое число');
+while (isNaN(inch) || inch <= 0 || inch % 1 != 0) {
+    alert('Вы ввели неправильное значение. Введите натуральное  целое число!');
+    inch = +prompt('Введите натуральное целое число.');
+};
 
-function createString (s) {
-    if (!s.includes(' ')){
-        alert ('Некорректный ввод')
-    } else {
-        s.toLowerCase();
-        const pos=s.indexOf(' ');
-        let name=s.slice(0, pos);
-        let lastName=s.slice(pos+1, s.length)
-        let result=" "+lastName[0].toUpperCase();
-        result+=lastName.slice(1, name.length);
-        return(result);
-    }
-}
-alertcreateString(srt)
+let calcCentimeter = () => (inch * 2.54).toFixed(2);
+
+alert (`Диагональ монитора равная в дюймах: ${inch}, в сантиметрах будет равна: ${calcCentimeter()}см.`);
